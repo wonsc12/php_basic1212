@@ -1,0 +1,19 @@
+https://www.php.net/language.variables.scope
+
+http://localhost/abc/
+
+include('파일')
+
+
+
+window.addEventListener('scroll',()=>{ // 인덱스 번호확인 foreach
+  section.forEach((item,idx)=>{
+    if(item.offsetTop <= window.scrollY){ // 각 섹션의 offsetTop값고 현재 스크롤양을 비교
+      console.log(idx);
+      for(let mm of menu){
+        mm.classList.remove('active');
+      }
+      menu[idx].classList.add('active');
+    }
+
+  })
